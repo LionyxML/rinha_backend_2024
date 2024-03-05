@@ -1,0 +1,19 @@
+# -*- restclient -*-
+
+# Target GET
+GET http://localhost:9999
+
+# Post Transaction
+POST http://localhost:9999/clientes/1/transacoes
+Content-Type: application/json
+
+{
+        "valor": 20000,
+		"tipo": "d",
+		"descricao": ""
+}
+
+# Target GET
+GET http://localhost:9999/clientes/1/extrato
+
+
